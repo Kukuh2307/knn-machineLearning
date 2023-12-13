@@ -1,7 +1,6 @@
 import pickle
 import streamlit as st
 
-# Model = '/home/kisawa16/Documents/KULIAH/MACHINE LEARNING/UTS/KNN/knn_model.pkl'
 knnModel = pickle.load(open('knn_model.pkl', 'rb'))
 
 st.title('KNN - Prediksi Kualitas Air')
