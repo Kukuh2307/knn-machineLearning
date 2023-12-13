@@ -7,8 +7,8 @@ st.title('KNN - Prediksi Kualitas Air')
     
 col1,col2 = st.columns(2)
 with col1:
-        almunium = st.text_input('Masukkan kadar almunium')
-        amonia = st.text_input('Masukkan kadar amonia')
+        aluminium = st.text_input('Masukkan kadar aluminium')
+        ammonia = st.text_input('Masukkan kadar ammonia')
         arsenic = st.text_input('Masukkan kadaar arsenic')
         barium = st.text_input('Masukkan kadar barium')
         cadmium = st.text_input('Masukkan kadar cadmium')
@@ -17,11 +17,11 @@ with col1:
         copper = st.text_input('Masukkan kadar copper')
         flouride = st.text_input('Masukkan kadar flouride')
         bacteria = st.text_input('Masukkan kadar bacteria')
-
 with col2:
         viruses = st.text_input('Masukkan kadar viruses')
         lead = st.text_input('Masukkan kadar lead')
         nitrates = st.text_input('Masukkan kadar nitrates')
+        nitrites = st.text_input('Masukkan kadar nitrites')
         mercury = st.text_input('Masukkan kadar mercury')
         perchlorate = st.text_input('Masukkan kadar perchlorate')
         radium = st.text_input('Masukkan kadar radium')
@@ -29,9 +29,9 @@ with col2:
         silver = st.text_input('Masukkan kadar silver')
         uranium = st.text_input('Masukkan kadar uranium')
 
-if almunium and amonia and arsenic and barium and cadmium and chloramine and chromium and copper and flouride and bacteria and viruses and lead and nitrates and mercury and perchlorate and radium and selenium and silver and uranium:
+if aluminium and ammonia and arsenic and barium and cadmium and chloramine and chromium and copper and flouride and bacteria and viruses and lead and nitrates and nitrites and mercury and perchlorate and radium and selenium and silver and uranium:
         input_data = [
-            float(almunium),float(amonia),float(arsenic),float(barium),float(cadmium),float(chloramine),float(chromium),float(copper),float(flouride),float(bacteria),float(viruses),float(lead),float(nitrates),float(mercury),float(perchlorate),float(radium),float(selenium),float(silver),float(uranium)
+            float(aluminium),float(ammonia),float(arsenic),float(barium),float(cadmium),float(chloramine),float(chromium),float(copper),float(flouride),float(bacteria),float(viruses),float(lead),float(nitrates),float(nitrites),float(mercury),float(perchlorate),float(radium),float(selenium),float(silver),float(uranium)
         ]
 
         water_status = ''
