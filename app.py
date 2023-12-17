@@ -1,7 +1,8 @@
 import pickle
 import streamlit as st
 
-knnModel = pickle.load(open('kevinmodelKNN.pkl', 'rb'))
+# knnModel = pickle.load(open('kevinmodelKNN.pkl', 'rb'))
+knnModel = pickle.load(open('knn_model.pkl', 'rb'))
 
 st.title('KNN - Prediksi Kualitas Air')
 
